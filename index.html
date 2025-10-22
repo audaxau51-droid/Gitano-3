@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mensaje sorpresa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      text-align: center;
+    }
+    .mensaje {
+      background: white;
+      padding: 2em;
+      border-radius: 1em;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <div class="mensaje" id="mensaje"></div>
+  <script>
+    const mensajes = [
+      "🧙‍♀️ Este mes te escribirán “solo para ver cómo estás”. No caigas… a menos que haya comida de por medio. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "👻 Alguien te stalkea más que un espíritu con Wi-Fi. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "🕯️ Tendrás suerte en el amor… si vas a Gitano podrias encontrarte con el amor de tu vida. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "🦇 Tu ex te pensará, pero tranquilo, también piensa en otras. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "🌻🎃 Se acerca alguien que te mira mucho… o quiere algo de ti. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "🧛‍♀️ No firmes nada ni aceptes tragos misteriosos… a menos que sean en Gitano. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "💀 Tus planes saldrán bien, aunque no los planees. El caos también tiene estilo. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "🔮 Este Halloween descubrirás quién te tiene ganas… y quién solo quiere tu cargador. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "🕸️ Cuídate de las promesas vacías y los mensajes con “jajaja xd”. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "🧹 Tus vibras están tan altas que ni los fantasmas se atreven a molestarte. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "🦉 Se viene un cambio positivo… o al menos un nuevo crush. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "🍷 Esa persona que te gusta también te stalkea. Solo que lo hace mejor. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "🧛‍♂️ Cuidado: alguien fingirá ser dulce… hasta que pruebe algo de ti. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "💫 Se alinean los astros para que te llegue dinero… o al menos un cupón de descuento. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "🧿 Este mes brillarás tanto que hasta los fantasmas querrán sacarse selfies contigo. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "🍎🔥 Vas a atraer miradas, pero también chismes. Lleva lentes oscuros y actitud. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "🌹 Te escribirán tu crush. Piensalo bien antes de responder. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "💌 Un mensaje inesperado encenderá tu semana… o tu ansiedad. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "🧙‍♂️ Tus planes se cancelarán, pero el universo te recompensará con algo mejor (con un regalo en Gitano 😉). <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁",
+      "🌕 Esta luna te traerá claridad a tu vida… o al menos buena luz para tus selfies. <br> 🎁 Tomale un screenshot a esto y muestralo en Gitano Resto Bar & Grill y recibe un obsequio 🎁"
+    ];
+    const aleatorio = Math.floor(Math.random() * mensajes.length);
+    // Cambiado textContent por innerHTML
+    document.getElementById("mensaje").innerHTML = mensajes[aleatorio];
+  </script>
+</body>
+</html>
